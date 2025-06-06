@@ -1,4 +1,4 @@
-"from typing import List
+from typing import List
 import fitz 
 
 def split_text(text: str, chunk_size=800, chunk_overlap=200) -> List[str]:
@@ -45,4 +45,4 @@ def parse_pdf_and_chunk(pdf_bytes: bytes, filename: str) -> List[dict]:
             print("Chunk example", c["text"][:200])
             break
 
-    return processed_chunks"
+    return processed_chunks
